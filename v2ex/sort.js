@@ -4,7 +4,7 @@
 // @include     http*://*v2ex.com/t/*
 // @description:en sort v2ex reply by star❤️
 // @description:zh-CN v2ex回复按照❤️排序
-// @version     1.0.0.3
+// @version     1.0.0.4
 // @description sort v2ex reply by star❤️
 // ==/UserScript==
 let content = $("div.box[style] + div + div.box");

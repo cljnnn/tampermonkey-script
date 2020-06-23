@@ -3,7 +3,7 @@
 // @namespace   cljnnn@gmail.com
 // @include     http*://*v2ex.com/t/*
 // @description:en sort v2ex reply by star❤️
-// @description:zh-CN v2ex回复按照❤️排序
+// @description:zh-CN v2ex回复按照❤️排序，如果你不想花太多时间在v2ex上，但又不想错过重要信息，你可能需要这个。
 // @version     1.0.0.5
 // @description sort v2ex reply by star❤️
 // ==/UserScript==

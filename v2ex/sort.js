@@ -4,7 +4,7 @@
 // @include     http*://*v2ex.com/t/*
 // @description:en sort v2ex replies by star❤️
 // @description:zh-CN v2ex回复按照❤️排序，如果你不想花太多时间在v2ex上，但又不想错过重要信息，你可能需要这个。兼容 V2EX Pro
-// @version     1.1.1
+// @version     1.1.2
 // @description sort v2ex replies by star❤️, compatible with V2EX Pro
 // ==/UserScript==
 
@@ -32,6 +32,16 @@ let replies = thread.querySelectorAll(":scope > div.cell[id]");
 
 let replyArray = [];
 for (let reply of replies) {
+    // remove avatar in child thead of V2EX Pro
+    let avatars = reply.querySelectorAll("div.reply_content img.avatar")
+    for (let avatar of avatars) {
+        avatar.parentElement.remove();
+    }
+    // remove right padding of child thead of V2EX Pro
+    let children = reply.querySelectorAll("div.cell");
+    for (let child of children) {
+        child.style.paddingRight = "0px";
+    }
     replyArray.push(reply);
 }
 
@@ -51,7 +61,7 @@ for (let reply of replyArray) {
 }
 
 // handle page rows
-let pageRows = thread.querySelectorAll("div.cell[style]");
+let pageRows = thread.querySelectorAll("div.cell[style]:not([id])");
 if (pageRows.length > 0) {
     thread.appendChild(pageRows[pageRows.length - 1]);
 }

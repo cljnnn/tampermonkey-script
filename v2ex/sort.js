@@ -1,5 +1,5 @@
 // ==UserScript==
-// @name        v2ex回复排序
+// @name        v2ex回复排序 (兼容 V2EX Pro)
 // @namespace   cljnnn@gmail.com
 // @include     http*://*v2ex.com/t/*
 // @description:en sort v2ex replies by star❤️

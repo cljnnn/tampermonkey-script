@@ -484,7 +484,7 @@ module.exports = function (cssWithMappingToString) {
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.i, "\n.store-toolbar[data-v-2e0f9840] {\r\n  position: fixed;\r\n  bottom: 0;\r\n  left: 50%;\r\n  transform: translateX(-50%);\r\n  width: 100%;\r\n  max-width: 940px;\r\n  background-color: #2b5370;\r\n  align-content: center;\r\n  text-align: center;\r\n  margin: 0 auto;\r\n  z-index: 999;\r\n  opacity: 1;\n}\n.lowest_notice[data-v-2e0f9840] {\r\n  background-color: greenyellow !important;\n}\n.new_lowest_notice[data-v-2e0f9840] {\r\n  background-color: springgreen !important;\n}\n.app_price[data-v-2e0f9840] {\r\n  color: black;\r\n  background-color: white;\r\n  font-size: large;\n}\r\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.i, "\n.store-toolbar[data-v-7cf104ae] {\r\n  position: fixed;\r\n  bottom: 0;\r\n  left: 50%;\r\n  transform: translateX(-50%);\r\n  width: 100%;\r\n  max-width: 940px;\r\n  background-color: #2b5370;\r\n  align-content: center;\r\n  text-align: center;\r\n  margin: 0 auto;\r\n  z-index: 999;\r\n  opacity: 1;\n}\n.lowest_notice[data-v-7cf104ae] {\r\n  background-color: greenyellow !important;\n}\n.new_lowest_notice[data-v-7cf104ae] {\r\n  background-color: springgreen !important;\n}\n.app_price[data-v-7cf104ae] {\r\n  color: black;\r\n  background-color: white;\r\n  font-size: large;\n}\r\n", ""]);
 // Exports
 /* harmony default export */ __webpack_exports__["a"] = (___CSS_LOADER_EXPORT___);
 
@@ -534,22 +534,28 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
 }
 // CONCATENATED MODULE: ./src/app.vue?vue&type=template&id=77bf89b1
 
-// CONCATENATED MODULE: ./node_modules/vue-loader/dist/templateLoader.js??ref--5!./node_modules/vue-loader/dist??ref--3!./src/components/Store.vue?vue&type=template&id=2e0f9840&scoped=true
+// CONCATENATED MODULE: ./node_modules/vue-loader/dist/templateLoader.js??ref--5!./node_modules/vue-loader/dist??ref--3!./src/components/Store.vue?vue&type=template&id=7cf104ae&scoped=true
 
 
-const _withScopeId = n => (Object(external_Vue_["pushScopeId"])("data-v-2e0f9840"),n=n(),Object(external_Vue_["popScopeId"])(),n)
-const Storevue_type_template_id_2e0f9840_scoped_true_hoisted_1 = { class: "store-toolbar" }
+const _withScopeId = n => (Object(external_Vue_["pushScopeId"])("data-v-7cf104ae"),n=n(),Object(external_Vue_["popScopeId"])(),n)
+const Storevue_type_template_id_7cf104ae_scoped_true_hoisted_1 = { class: "store-toolbar" }
 const _hoisted_2 = { key: 0 }
-const _hoisted_3 = ["href", "target"]
-const _hoisted_4 = { key: 1 }
-const _hoisted_5 = /*#__PURE__*/Object(external_Vue_["createTextVNode"])(" 最低价： ")
-const _hoisted_6 = ["href"]
-const _hoisted_7 = { key: 2 }
+const _hoisted_3 = { key: 0 }
+const _hoisted_4 = ["href", "target"]
+const _hoisted_5 = { key: 1 }
+const _hoisted_6 = /*#__PURE__*/Object(external_Vue_["createTextVNode"])(" 最低价： ")
+const _hoisted_7 = ["href"]
+const _hoisted_8 = { key: 2 }
 
-function Storevue_type_template_id_2e0f9840_scoped_true_render(_ctx, _cache, $props, $setup, $data, $options) {
-  return (Object(external_Vue_["openBlock"])(), Object(external_Vue_["createElementBlock"])("div", Storevue_type_template_id_2e0f9840_scoped_true_hoisted_1, [
+function Storevue_type_template_id_7cf104ae_scoped_true_render(_ctx, _cache, $props, $setup, $data, $options) {
+  return (Object(external_Vue_["openBlock"])(), Object(external_Vue_["createElementBlock"])("div", Storevue_type_template_id_7cf104ae_scoped_true_hoisted_1, [
     ($data.heiheApp)
-      ? (Object(external_Vue_["openBlock"])(), Object(external_Vue_["createElementBlock"])("span", _hoisted_2, " 《" + Object(external_Vue_["toDisplayString"])($data.heiheApp.name) + "》 在线：" + Object(external_Vue_["toDisplayString"])($data.heiheApp.user_num.game_data[1].num) + "  ", 1 /* TEXT */))
+      ? (Object(external_Vue_["openBlock"])(), Object(external_Vue_["createElementBlock"])("span", _hoisted_2, [
+          Object(external_Vue_["createTextVNode"])(" 《" + Object(external_Vue_["toDisplayString"])($data.heiheApp.name) + "》 ", 1 /* TEXT */),
+          ($data.heiheApp.hasOwnProperty('playerCount'))
+            ? (Object(external_Vue_["openBlock"])(), Object(external_Vue_["createElementBlock"])("span", _hoisted_3, " 在线：" + Object(external_Vue_["toDisplayString"])($data.heiheApp.playerCount) + "  ", 1 /* TEXT */))
+            : Object(external_Vue_["createCommentVNode"])("v-if", true)
+        ]))
       : Object(external_Vue_["createCommentVNode"])("v-if", true),
     (Object(external_Vue_["openBlock"])(true), Object(external_Vue_["createElementBlock"])(external_Vue_["Fragment"], null, Object(external_Vue_["renderList"])($data.usefulLinks, (link) => {
       return (Object(external_Vue_["openBlock"])(), Object(external_Vue_["createElementBlock"])("a", {
@@ -559,11 +565,11 @@ function Storevue_type_template_id_2e0f9840_scoped_true_render(_ctx, _cache, $pr
         class: "btnv6_blue_hoverfade btn_medium"
       }, [
         Object(external_Vue_["createElementVNode"])("span", null, Object(external_Vue_["toDisplayString"])(link.name), 1 /* TEXT */)
-      ], 8 /* PROPS */, _hoisted_3))
+      ], 8 /* PROPS */, _hoisted_4))
     }), 128 /* KEYED_FRAGMENT */)),
     ($data.price_loaded)
-      ? (Object(external_Vue_["openBlock"])(), Object(external_Vue_["createElementBlock"])("span", _hoisted_4, [
-          _hoisted_5,
+      ? (Object(external_Vue_["openBlock"])(), Object(external_Vue_["createElementBlock"])("span", _hoisted_5, [
+          _hoisted_6,
           Object(external_Vue_["createElementVNode"])("a", {
             href: 'https://steamdb.info/app/'+$data.appid,
             target: "_blank"
@@ -571,13 +577,13 @@ function Storevue_type_template_id_2e0f9840_scoped_true_render(_ctx, _cache, $pr
             Object(external_Vue_["createElementVNode"])("span", {
               class: Object(external_Vue_["normalizeClass"])({lowest_notice: $data.lowest.isLowest, new_lowest_notice: $data.lowest.isNewLowest, app_price: true})
             }, Object(external_Vue_["toDisplayString"])($data.lowest.price) + "@-" + Object(external_Vue_["toDisplayString"])($data.lowest.discount) + "% ", 3 /* TEXT, CLASS */)
-          ], 8 /* PROPS */, _hoisted_6),
+          ], 8 /* PROPS */, _hoisted_7),
           Object(external_Vue_["createTextVNode"])(" 在：" + Object(external_Vue_["toDisplayString"])($data.lowest.date), 1 /* TEXT */)
         ]))
-      : (Object(external_Vue_["openBlock"])(), Object(external_Vue_["createElementBlock"])("span", _hoisted_7, Object(external_Vue_["toDisplayString"])($data.price_loading_message), 1 /* TEXT */))
+      : (Object(external_Vue_["openBlock"])(), Object(external_Vue_["createElementBlock"])("span", _hoisted_8, Object(external_Vue_["toDisplayString"])($data.price_loading_message), 1 /* TEXT */))
   ]))
 }
-// CONCATENATED MODULE: ./src/components/Store.vue?vue&type=template&id=2e0f9840&scoped=true
+// CONCATENATED MODULE: ./src/components/Store.vue?vue&type=template&id=7cf104ae&scoped=true
 
 // CONCATENATED MODULE: ./src/utils/steamdb.js
 const xhr = option => new Promise((resolve, reject) => {
@@ -616,7 +622,7 @@ const SteamDB = {
                 url: endpoint,
             });
             response = JSON.parse(response.responseText)
-            if (response.status === "ok") {
+            if (response.status === "ok" && response.result.hasOwnProperty("name")) {
                 return response.result;
             }
             return null;
@@ -702,6 +708,10 @@ const Steam = {
       if (searchGameName !== this.gameCNName) {
         searchGameName = `${this.gameCNName}`
       }
+      let playerCountItem = this.heiheApp.user_num.game_data.find(e => e.desc === "昨日峰值在线");
+      if (playerCountItem) {
+        this.heiheApp.playerCount = playerCountItem.value;
+      }
     }
     this.usefulLinks = [
       {name: "评测", href: "#app_reviews_hash", target: ""},
@@ -719,7 +729,7 @@ const Steam = {
       this.lowest.date = new Date(this.lowest.date).toLocaleDateString();
       this.price_loaded = true;
       if (this.lowest.isLowest) {
-        if (this.heiheApp && this.heiheApp.price.new_lowest) {
+        if (this.heiheApp && this.heiheApp.price && this.heiheApp.price.new_lowest) {
           this.lowest.isLowest = false;
           this.lowest.isNewLowest = true;
         }
@@ -736,10 +746,10 @@ const Steam = {
 var injectStylesIntoStyleTag = __webpack_require__(2);
 var injectStylesIntoStyleTag_default = /*#__PURE__*/__webpack_require__.n(injectStylesIntoStyleTag);
 
-// EXTERNAL MODULE: ./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/vue-loader/dist??ref--3!./src/components/Store.vue?vue&type=style&index=0&id=2e0f9840&scoped=true&lang=css
-var Storevue_type_style_index_0_id_2e0f9840_scoped_true_lang_css = __webpack_require__(4);
+// EXTERNAL MODULE: ./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/vue-loader/dist??ref--3!./src/components/Store.vue?vue&type=style&index=0&id=7cf104ae&scoped=true&lang=css
+var Storevue_type_style_index_0_id_7cf104ae_scoped_true_lang_css = __webpack_require__(4);
 
-// CONCATENATED MODULE: ./node_modules/style-loader/dist/cjs.js!./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/vue-loader/dist??ref--3!./src/components/Store.vue?vue&type=style&index=0&id=2e0f9840&scoped=true&lang=css
+// CONCATENATED MODULE: ./node_modules/style-loader/dist/cjs.js!./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/vue-loader/dist??ref--3!./src/components/Store.vue?vue&type=style&index=0&id=7cf104ae&scoped=true&lang=css
 
             
 
@@ -748,12 +758,12 @@ var options = {};
 options.insert = "head";
 options.singleton = false;
 
-var update = injectStylesIntoStyleTag_default()(Storevue_type_style_index_0_id_2e0f9840_scoped_true_lang_css["a" /* default */], options);
+var update = injectStylesIntoStyleTag_default()(Storevue_type_style_index_0_id_7cf104ae_scoped_true_lang_css["a" /* default */], options);
 
 
 
-/* harmony default export */ var components_Storevue_type_style_index_0_id_2e0f9840_scoped_true_lang_css = (Storevue_type_style_index_0_id_2e0f9840_scoped_true_lang_css["a" /* default */].locals || {});
-// CONCATENATED MODULE: ./src/components/Store.vue?vue&type=style&index=0&id=2e0f9840&scoped=true&lang=css
+/* harmony default export */ var components_Storevue_type_style_index_0_id_7cf104ae_scoped_true_lang_css = (Storevue_type_style_index_0_id_7cf104ae_scoped_true_lang_css["a" /* default */].locals || {});
+// CONCATENATED MODULE: ./src/components/Store.vue?vue&type=style&index=0&id=7cf104ae&scoped=true&lang=css
 
 // EXTERNAL MODULE: ./node_modules/vue-loader/dist/exportHelper.js
 var exportHelper = __webpack_require__(1);
@@ -767,7 +777,7 @@ var exportHelper_default = /*#__PURE__*/__webpack_require__.n(exportHelper);
 
 
 
-const __exports__ = /*#__PURE__*/exportHelper_default()(Storevue_type_script_lang_js, [['render',Storevue_type_template_id_2e0f9840_scoped_true_render],['__scopeId',"data-v-2e0f9840"]])
+const __exports__ = /*#__PURE__*/exportHelper_default()(Storevue_type_script_lang_js, [['render',Storevue_type_template_id_7cf104ae_scoped_true_render],['__scopeId',"data-v-7cf104ae"]])
 
 /* harmony default export */ var Store = (__exports__);
 // CONCATENATED MODULE: ./node_modules/vue-loader/dist/templateLoader.js??ref--5!./node_modules/vue-loader/dist??ref--3!./src/components/Introduction.vue?vue&type=template&id=0bd4ce14&scoped=true
@@ -921,6 +931,7 @@ const app_exports_ = /*#__PURE__*/exportHelper_default()(appvue_type_script_lang
 
 
 
+// import Antd from '@/utils/antd'
 
 const id = `app_vue_${Date.now()}`
 const root = document.createElement('div')
@@ -932,12 +943,10 @@ if (isDev) {
   const app = Vue.createApp(src_app)
   // const Antd = require('ant-design-vue');
   // app.use(Antd)
-  // app.use(Antd)
   app.mount(`#${id}`)
 } else {
   const app = Vue.createApp(src_app)
   // const Antd = require('ant-design-vue');
-  // app.use(Antd)
   // app.use(Antd)
   app.mount(`#${id}`)
 }

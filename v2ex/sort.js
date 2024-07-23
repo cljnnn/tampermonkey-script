@@ -4,7 +4,7 @@
 // @include     http*://*v2ex.com/t/*
 // @description:en sort v2ex replies by star❤️
 // @description:zh-CN v2ex回复按照❤️排序，如果你不想花太多时间在v2ex上，但又不想错过重要信息，你可能需要这个。兼容 V2EX Pro
-// @version     1.1.3
+// @version     1.1.5
 // @description sort v2ex replies by star❤️, compatible with V2EX Pro
 // ==/UserScript==
 
@@ -46,7 +46,7 @@ for (let reply of replyArray) {
 }
 
 // handle page rows
-let pageRows = thread.querySelectorAll("div.cell[style]:not([id])");
+let pageRows = thread.querySelectorAll("div.cell.ps_container");
 if (pageRows.length > 0) {
     thread.appendChild(pageRows[pageRows.length - 1]);
 }
